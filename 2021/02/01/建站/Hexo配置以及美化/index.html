@@ -19,10 +19,12 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
+  <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"runfunwolf.com","root":"/","images":"/images","scheme":"Gemini","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"runfunwolf.com","root":"/","images":"/images","scheme":"Gemini","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 <meta name="description" content="这是摘要内容">
 <meta property="og:type" content="article">
@@ -31,21 +33,12 @@
 <meta property="og:site_name" content="吹泡泡的小孩儿">
 <meta property="og:description" content="这是摘要内容">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://github.com/theme-next/hexo-symbols-count-time">
-<meta property="og:image" content="https://github.com/hexojs/hexo-generator-feed">
-<meta property="og:image" content="https://github.com/tea3/hexo-related-popular-posts">
-<meta property="og:image" content="https://github.com/7ym0n/hexo-asset-image">
-<meta property="og:image" content="https://github.com/theme-next/theme-next-fancybox3">
-<meta property="og:image" content="https://github.com/theme-next/theme-next-jquery-lazyload">
-<meta property="og:image" content="https://github.com/theme-next/theme-next-reading-progress">
-<meta property="og:image" content="https://github.com/next-theme/hexo-generator-searchdb">
 <meta property="article:published_time" content="2021-02-01T10:57:00.000Z">
-<meta property="article:modified_time" content="2021-02-02T09:41:12.704Z">
+<meta property="article:modified_time" content="2021-02-02T12:21:26.480Z">
 <meta property="article:author" content="Runfun">
 <meta property="article:tag" content="建站">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://github.com/theme-next/hexo-symbols-count-time">
 
 
 <link rel="canonical" href="https://runfunwolf.com/2021/02/01/%E5%BB%BA%E7%AB%99/Hexo%E9%85%8D%E7%BD%AE%E4%BB%A5%E5%8F%8A%E7%BE%8E%E5%8C%96/">
@@ -125,6 +118,7 @@
       <h1 class="site-title">吹泡泡的小孩儿</h1>
       <i class="logo-line"></i>
     </a>
+      <p class="site-subtitle" itemprop="description">恋恋天下第一</p>
   </div>
 
   <div class="site-nav-right">
@@ -187,7 +181,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -200,6 +194,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8F%92%E4%BB%B6"><span class="nav-number">1.</span> <span class="nav-text">插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9E%E5%88%B0%E9%A1%B6%E9%83%A8"><span class="nav-number">2.</span> <span class="nav-text">回到顶部</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE"><span class="nav-number">3.</span> <span class="nav-text">字体设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E8%AE%BE%E7%BD%AE"><span class="nav-number">4.</span> <span class="nav-text">代码高亮设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%B5%E9%9D%A2"><span class="nav-number">5.</span> <span class="nav-text">页面</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -208,7 +203,7 @@
     <img class="site-author-image" itemprop="image" alt="Runfun"
       src="/images/avatar0.png">
   <p class="site-author-name" itemprop="name">Runfun</p>
-  <div class="site-description" itemprop="description"></div>
+  <div class="site-description" itemprop="description">Brambly Rose Garden</div>
 </div>
 <div class="site-state-wrap site-overview-item animated">
   <nav class="site-state">
@@ -243,6 +238,9 @@
       <span class="links-of-author-item">
         <a href="https://weibo.com/u/6289036615" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;6289036615" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
       </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/runfun8" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;runfun8" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
   </div>
 
 
@@ -250,7 +248,7 @@
         </div>
       </div>
         <div class="back-to-top animated" role="button">
-          <i class="fa fa-arrow-up"></i>
+          <i class="fa fa-arrow-up"> 回到顶部</i>
           <span>0%</span>
         </div>
     </div>
@@ -286,7 +284,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar0.png">
       <meta itemprop="name" content="Runfun">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="Brambly Rose Garden">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -312,7 +310,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-02-02 17:41:12" itemprop="dateModified" datetime="2021-02-02T17:41:12+08:00">2021-02-02</time>
+        <time title="修改时间：2021-02-02 20:21:26" itemprop="dateModified" datetime="2021-02-02T20:21:26+08:00">2021-02-02</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -339,7 +337,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>1.2k</span>
+      <span>1.6k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -359,33 +357,33 @@
     
     <div class="post-body" itemprop="articleBody">
         <p>Hexo站点配置<br>_config.yml</p>
-<p>插件</p>
-<ul>
-<li><p>添加预计阅读时间功能<br><img data-src="https://github.com/theme-next/hexo-symbols-count-time" alt="hexo-symbols-count-time"></p>
+<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><ul>
+<li><p>添加预计阅读时间功能<br><a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-symbols-count-time">hexo-symbols-count-time</a></p>
 </li>
-<li><p>添加RSS订阅<br><img data-src="https://github.com/hexojs/hexo-generator-feed" alt="hexo-generator-feed"></p>
+<li><p>添加RSS订阅<br><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-generator-feed">hexo-generator-feed</a></p>
 </li>
-<li><p>添加最受欢迎文章功能<br><img data-src="https://github.com/tea3/hexo-related-popular-posts" alt="hexo-related-popular-posts"></p>
+<li><p>添加最受欢迎文章功能<br><a target="_blank" rel="noopener" href="https://github.com/tea3/hexo-related-popular-posts">hexo-related-popular-posts</a></p>
 </li>
-<li><p>无法显示图片<br><img data-src="https://github.com/7ym0n/hexo-asset-image" alt="hexo-asset-image"></p>
+<li><p>无法显示图片<br><a target="_blank" rel="noopener" href="https://github.com/7ym0n/hexo-asset-image">hexo-asset-image</a></p>
 </li>
-<li><p>图片浏览功能<insert><br><img data-src="https://github.com/theme-next/theme-next-fancybox3" alt="theme-next-fancybox3"></insert></p>
+<li><p>图片浏览功能<insert><br><a target="_blank" rel="noopener" href="https://github.com/theme-next/theme-next-fancybox3">theme-next-fancybox3</a></insert></p>
 </li>
-<li><p>懒加载<insert><br><img data-src="https://github.com/theme-next/theme-next-jquery-lazyload" alt="theme-next-jquery-lazyload"></insert></p>
+<li><p>懒加载<insert><br><a target="_blank" rel="noopener" href="https://github.com/theme-next/theme-next-jquery-lazyload">theme-next-jquery-lazyload</a></insert></p>
 </li>
-<li><p>阅读进度条<insert><br><img data-src="https://github.com/theme-next/theme-next-reading-progress" alt="theme-next-reading-progress"></insert></p>
+<li><p>阅读进度条<insert><br><a target="_blank" rel="noopener" href="https://github.com/theme-next/theme-next-reading-progress">theme-next-reading-progress</a></insert></p>
 </li>
-<li><p>搜索<br><img data-src="https://github.com/next-theme/hexo-generator-searchdb" alt="hexo-generator-searchdb"></p>
+<li><p>搜索<br><a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-generator-searchdb">hexo-generator-searchdb</a></p>
 </li>
 </ul>
 <p>博主的文件目录如下<br><img src alt="文件目录"><br><a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next">next主题</a><br>主题安装</p>
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd .\Blog\</span><br><span class="line">git clone https:<span class="regexp">//gi</span>thub.com<span class="regexp">/next-theme/</span>hexo-theme-<span class="keyword">next</span> themes/<span class="keyword">next</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
+<h2 id="回到顶部"><a href="#回到顶部" class="headerlink" title="回到顶部"></a>回到顶部</h2><p>_macro/sidebar</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;%- if theme.back2top.enable and theme.back2top.sidebar %&#125;</span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;back-to-top animated&quot;</span> <span class="attr">role</span>=<span class="string">&quot;button&quot;</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fa fa-arrow-up&quot;</span>&gt;</span> 回到顶部<span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">span</span>&gt;</span>0%<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      &#123;%- endif %&#125;</span><br></pre></td></tr></table></figure>
 
 
-<p>字体设置</p>
-<p>代码高亮设置</p>
-<p>tags<br>categories<br>about<br>404</p>
+
+<h2 id="字体设置"><a href="#字体设置" class="headerlink" title="字体设置"></a>字体设置</h2><h2 id="代码高亮设置"><a href="#代码高亮设置" class="headerlink" title="代码高亮设置"></a>代码高亮设置</h2><h2 id="页面"><a href="#页面" class="headerlink" title="页面"></a>页面</h2><p>tags<br>categories<br>about<br>404</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">HTML</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;content-type&quot;</span> <span class="attr">content</span>=<span class="string">&quot;text/html;charset=utf-8;&quot;</span>/&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;IE=edge,chrome=1&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;robots&quot;</span> <span class="attr">content</span>=<span class="string">&quot;all&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;robots&quot;</span> <span class="attr">content</span>=<span class="string">&quot;index,follow&quot;</span>/&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://qzone.qq.com/gy/404/style/404style.css&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/plain&quot;</span> <span class="attr">src</span>=<span class="string">&quot;http://www.qq.com/404/search_children.js&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> <span class="attr">homePageUrl</span>=<span class="string">&quot;/&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">homePageName</span>=<span class="string">&quot;回到我的主页&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://qzone.qq.com/gy/404/data.js&quot;</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://qzone.qq.com/gy/404/page.js&quot;</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>界面</p>
 
@@ -414,6 +412,10 @@
         <img src="/images/wechatpay.png" alt="Runfun 微信">
         <span>微信</span>
       </div>
+      <div>
+        <img src="/images/alipay.png" alt="Runfun 支付宝">
+        <span>支付宝</span>
+      </div>
 
   </div>
 </div>
@@ -441,22 +443,12 @@
   <div class="social-list">
 
       <div class="social-item">
-        <a target="_blank" class="social-link" href="https://twitter.com/username">
+        <a target="_blank" class="social-link" href="https://twitter.com/runfun8">
           <span class="icon">
             <i class="fab fa-twitter"></i>
           </span>
 
           <span class="label">Twitter</span>
-        </a>
-      </div>
-
-      <div class="social-item">
-        <a target="_blank" class="social-link" href="/images/wechat_channel.jpg">
-          <span class="icon">
-            <i class="fab fa-weixin"></i>
-          </span>
-
-          <span class="label">WeChat</span>
         </a>
       </div>
 
@@ -540,7 +532,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">5k</span>
+    <span title="站点总字数">6k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
@@ -587,6 +579,26 @@
 
 
 
+  <script>
+    NProgress.configure({
+      showSpinner: true
+    });
+    NProgress.start();
+    document.addEventListener('readystatechange', () => {
+      if (document.readyState === 'interactive') {
+        NProgress.inc(0.8);
+      }
+      if (document.readyState === 'complete') {
+        NProgress.done();
+      }
+    });
+    document.addEventListener('pjax:send', () => {
+      NProgress.start();
+    });
+    document.addEventListener('pjax:success', () => {
+      NProgress.done();
+    });
+  </script>
 
   
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>

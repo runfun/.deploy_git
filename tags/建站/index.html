@@ -19,15 +19,19 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
+  <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"runfunwolf.com","root":"/","images":"/images","scheme":"Gemini","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"runfunwolf.com","root":"/","images":"/images","scheme":"Gemini","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
+<meta name="description" content="Brambly Rose Garden">
 <meta property="og:type" content="website">
 <meta property="og:title" content="吹泡泡的小孩儿">
 <meta property="og:url" content="https://runfunwolf.com/tags/%E5%BB%BA%E7%AB%99/index.html">
 <meta property="og:site_name" content="吹泡泡的小孩儿">
+<meta property="og:description" content="Brambly Rose Garden">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="Runfun">
 <meta name="twitter:card" content="summary">
@@ -110,6 +114,7 @@
       <h1 class="site-title">吹泡泡的小孩儿</h1>
       <i class="logo-line"></i>
     </a>
+      <p class="site-subtitle" itemprop="description">恋恋天下第一</p>
   </div>
 
   <div class="site-nav-right">
@@ -193,7 +198,7 @@
     <img class="site-author-image" itemprop="image" alt="Runfun"
       src="/images/avatar0.png">
   <p class="site-author-name" itemprop="name">Runfun</p>
-  <div class="site-description" itemprop="description"></div>
+  <div class="site-description" itemprop="description">Brambly Rose Garden</div>
 </div>
 <div class="site-state-wrap site-overview-item animated">
   <nav class="site-state">
@@ -228,6 +233,9 @@
       <span class="links-of-author-item">
         <a href="https://weibo.com/u/6289036615" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;6289036615" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
       </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/runfun8" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;runfun8" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
   </div>
 
 
@@ -235,7 +243,7 @@
         </div>
       </div>
         <div class="back-to-top animated" role="button">
-          <i class="fa fa-arrow-up"></i>
+          <i class="fa fa-arrow-up"> 回到顶部</i>
           <span>0%</span>
         </div>
     </div>
@@ -362,7 +370,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">5k</span>
+    <span title="站点总字数">6k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
@@ -409,6 +417,26 @@
 
 
 
+  <script>
+    NProgress.configure({
+      showSpinner: true
+    });
+    NProgress.start();
+    document.addEventListener('readystatechange', () => {
+      if (document.readyState === 'interactive') {
+        NProgress.inc(0.8);
+      }
+      if (document.readyState === 'complete') {
+        NProgress.done();
+      }
+    });
+    document.addEventListener('pjax:send', () => {
+      NProgress.start();
+    });
+    document.addEventListener('pjax:success', () => {
+      NProgress.done();
+    });
+  </script>
 
   
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>

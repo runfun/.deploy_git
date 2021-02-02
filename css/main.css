@@ -1586,7 +1586,7 @@ pre code {
   text-overflow: ellipsis;
 }
 .post-toc .nav .nav-child {
-  display: block;
+  display: none;
 }
 .post-toc .nav .active > .nav-child {
   display: block;
@@ -2996,4 +2996,15 @@ mark.search-keyword {
   .comments {
     padding: 10px 12px;
   }
+}
+.post-body p a[href*="http"] {
+  color: #0593d3;
+  border-bottom: none;
+  background: url("https://runfunwolf.com/images/link.png") no-repeat 100% 0;
+  background-size: 16px 16px;
+  padding-right: 19px;
+}
+.post-body p a[href*="http"]:hover {
+  color: #0477ab;
+  text-decoration: underline;
 }
