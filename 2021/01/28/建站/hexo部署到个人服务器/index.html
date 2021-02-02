@@ -14,7 +14,7 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kosugi+Maru:300,300italic,400,400italic,700,700italic%7CHachi+Maru+Pop:300,300italic,400,400italic,700,700italic%7CFira+Code:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
@@ -22,41 +22,41 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"runfunwolf.com","root":"/","images":"/images","scheme":"Gemini","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="这是摘要内容">
+<meta name="description" content="记录了自己将Hexo博客部署到自己的云服务器上的全过程。介绍了从域名购买到主机环境搭建的全过程。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo部署到个人服务器">
-<meta property="og:url" content="http://example.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/index.html">
+<meta property="og:url" content="https://runfunwolf.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/index.html">
 <meta property="og:site_name" content="吹泡泡的小孩儿">
-<meta property="og:description" content="这是摘要内容">
+<meta property="og:description" content="记录了自己将Hexo博客部署到自己的云服务器上的全过程。介绍了从域名购买到主机环境搭建的全过程。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/nodejs_install_01.png">
-<meta property="og:image" content="http://example.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/nodejs_install_02.png">
-<meta property="og:image" content="http://example.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/nodejs_config_01.png">
-<meta property="og:image" content="http://example.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/nodejs_config_03.png">
-<meta property="og:image" content="http://example.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/nodejs_config_02.png">
-<meta property="og:image" content="http://example.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/hexo_install.png">
-<meta property="og:image" content="http://example.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/bt_setting_01.png">
-<meta property="og:image" content="http://example.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/bt_setting_02.png">
-<meta property="og:image" content="http://example.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/dns_01.png">
-<meta property="og:image" content="http://example.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/dns_02.png">
-<meta property="og:image" content="http://example.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/ssl_01.png">
-<meta property="og:image" content="http://example.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/xshell_01.png">
-<meta property="og:image" content="http://example.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/xshell_02.png">
-<meta property="og:image" content="http://example.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/ssh_01.png">
-<meta property="og:image" content="http://example.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/hexo_setting_01.png">
-<meta property="og:image" content="http://example.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/finish.png">
+<meta property="og:image" content="https://runfunwolf.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/nodejs_install_01.png">
+<meta property="og:image" content="https://runfunwolf.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/nodejs_install_02.png">
+<meta property="og:image" content="https://runfunwolf.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/nodejs_config_01.png">
+<meta property="og:image" content="https://runfunwolf.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/nodejs_config_03.png">
+<meta property="og:image" content="https://runfunwolf.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/nodejs_config_02.png">
+<meta property="og:image" content="https://runfunwolf.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/hexo_install.png">
+<meta property="og:image" content="https://runfunwolf.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/bt_setting_01.png">
+<meta property="og:image" content="https://runfunwolf.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/bt_setting_02.png">
+<meta property="og:image" content="https://runfunwolf.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/dns_01.png">
+<meta property="og:image" content="https://runfunwolf.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/dns_02.png">
+<meta property="og:image" content="https://runfunwolf.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/ssl_01.png">
+<meta property="og:image" content="https://runfunwolf.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/xshell_01.png">
+<meta property="og:image" content="https://runfunwolf.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/xshell_02.png">
+<meta property="og:image" content="https://runfunwolf.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/ssh_01.png">
+<meta property="og:image" content="https://runfunwolf.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/hexo_setting_01.png">
+<meta property="og:image" content="https://runfunwolf.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/finish.png">
 <meta property="article:published_time" content="2021-01-28T08:46:43.000Z">
-<meta property="article:modified_time" content="2021-02-01T12:34:15.204Z">
+<meta property="article:modified_time" content="2021-02-02T09:30:37.508Z">
 <meta property="article:author" content="Runfun">
 <meta property="article:tag" content="建站">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/nodejs_install_01.png">
+<meta name="twitter:image" content="https://runfunwolf.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/nodejs_install_01.png">
 
 
-<link rel="canonical" href="http://example.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/">
+<link rel="canonical" href="https://runfunwolf.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/">
 
 
 <script class="page-configurations">
@@ -229,12 +229,16 @@
         </a>
       </div>
       <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
         <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">分类</span>
+        <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
         <span class="site-state-item-count">2</span>
-        <span class="site-state-item-name">标签</span>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
@@ -286,7 +290,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/">
+    <link itemprop="mainEntityOfPage" href="https://runfunwolf.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar0.png">
@@ -317,7 +321,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-02-01 20:34:15" itemprop="dateModified" datetime="2021-02-01T20:34:15+08:00">2021-02-01</time>
+        <time title="修改时间：2021-02-02 17:30:37" itemprop="dateModified" datetime="2021-02-02T17:30:37+08:00">2021-02-02</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -344,7 +348,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>4.4k</span>
+      <span>4.3k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -355,7 +359,7 @@
     </span>
 </div>
 
-            <div class="post-description">这是摘要内容</div>
+            <div class="post-description">记录了自己将Hexo博客部署到自己的云服务器上的全过程。介绍了从域名购买到主机环境搭建的全过程。</div>
         </div>
       </header>
 
@@ -382,17 +386,19 @@
 <p>为了能够直接在命令行中使用nodejs 和 npm 需要设置环境变量</p>
 <p>在系统变量path中添加如下路径，直接写你自己的nodejs根目录和node_global根目录即可</p>
 <p><img data-src="/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/nodejs_config_03.png" alt="nodejs安装初始界面"></p>
-<p>在系统变量中新建NODE_PATH变量，值设置为你自己的node_global文件夹目录，这里是D:\Software\Nodejs\node_global</p>
+<p>在系统变量中新建NODE_PATH变量，值设置为你自己的node_global文件夹目录，这里是<code>D:\Software\Nodejs\node_global</code></p>
 <p><img data-src="/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/nodejs_config_02.png" alt="nodejs安装初始界面"></p>
 <p>设置完成之后，我们还需要修改npm配置文件，直接命令行键入</p>
-<pre class="line-numbers language-none"><code class="language-none">npm config set prefix &quot;D:\Software\Nodejs\node_global&quot;
-npm config set cache &quot;D:\Software\Nodejs\node_cache&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre><code>npm config set prefix &quot;D:\Software\Nodejs\node_global&quot;
+npm config set cache &quot;D:\Software\Nodejs\node_cache&quot;
+</code></pre>
 <h3 id="2-Hexo框架"><a href="#2-Hexo框架" class="headerlink" title="2. Hexo框架"></a>2. Hexo框架</h3><h4 id="2-1-安装Hexo"><a href="#2-1-安装Hexo" class="headerlink" title="2.1 安装Hexo"></a>2.1 安装Hexo</h4><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo博客框架</a>的安装十分简单，直接按照官网步骤来即可</p>
-<pre class="line-numbers language-none"><code class="language-none">npm install hexo-cli -g # 全局安装hexo
+<pre><code>npm install hexo-cli -g # 全局安装hexo
 hexo init blog # 初始化博客文件夹，命名为blog；默认是在当前文件夹
 cd blog
 npm install # 安装依赖
-hexo server # 启动服务，等同于 hexo s<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+hexo server # 启动服务，等同于 hexo s
+</code></pre>
 <p>这样在浏览器进入<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a>就能够看到博客界面了，至此，博客框架就安装完了</p>
 <p><img data-src="/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/hexo_install.png" alt="Hexo框架安装完成"></p>
 <h4 id="2-2-博客使用和主题选择"><a href="#2-2-博客使用和主题选择" class="headerlink" title="2.2 博客使用和主题选择"></a>2.2 博客使用和主题选择</h4><p>至于博客使用和主题选择可以参考我的另外几篇博文，同时也可以在<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">官方文档</a>和<a href="google.com">网络</a>上找到大量的分享。可以先专注于服务器部署，后续再进行博客的熟悉和主题美化。</p>
@@ -400,7 +406,7 @@ hexo server # 启动服务，等同于 hexo s<span aria-hidden="true" class="lin
 <h2 id="服务器环境准备"><a href="#服务器环境准备" class="headerlink" title="服务器环境准备"></a>服务器环境准备</h2><h3 id="3-域名选择"><a href="#3-域名选择" class="headerlink" title="3. 域名选择"></a>3. 域名选择</h3><p>关于域名的选择，这就见仁见智了，网络上有大量的域名分销商，博主的域名是在“狗爹”「<a target="_blank" rel="noopener" href="https://sg.godaddy.com/zh">GoDaddy</a>」上购买的</p>
 <h3 id="4-服务器选择"><a href="#4-服务器选择" class="headerlink" title="4. 服务器选择"></a>4. 服务器选择</h3><p>选择服务器的时候，可是废了好大的功夫，对博主这种穷逼来说，总是希望选择一个最便宜的主机，后来挑来挑去选择的<a target="_blank" rel="noopener" href="https://www.rainyun.com/">雨云</a>的easyPanel的香港虚拟主机，一个月只需要8块钱，并且年购打7折，结果发现并没有提供SSH连接，这让人好恼火哦，无奈最后升级成了宝塔面板的虚拟主机，一个月15元，还算可以吧。当然各位也可以去选择别的主机，或者选择阿里，腾讯的学生套餐，也很实惠，不过缺点就是需要备案。</p>
 <p>在这里就说一下自己再雨云香港宝塔二代(KVM)虚拟主机上的配置过程吧</p>
-<h3 id="5-站点解析配置"><a href="#5-站点解析配置" class="headerlink" title="5. 站点解析配置"></a>5. 站点解析配置</h3><h4 id="5-1-虚拟主机控制面板处绑定域名"><a href="#5-1-虚拟主机控制面板处绑定域名" class="headerlink" title="5.1 虚拟主机控制面板处绑定域名"></a>5.1 虚拟主机控制面板处绑定域名</h4><p>在虚拟主机控制面板处绑定你自己的域名，如果没有SSL证书可以不用勾选开启HTTPS支持，后续再说。yourdomain.xxx 和 <a target="_blank" rel="noopener" href="http://www.yourdomain.xxx都要绑定,否则影响后续ssl证书申请,我的已经部署了ssl,所以是https开头的./">www.yourdomain.xxx都要绑定，否则影响后续SSL证书申请，我的已经部署了SSL，所以是https开头的。</a></p>
+<h3 id="5-站点解析配置"><a href="#5-站点解析配置" class="headerlink" title="5. 站点解析配置"></a>5. 站点解析配置</h3><h4 id="5-1-虚拟主机控制面板处绑定域名"><a href="#5-1-虚拟主机控制面板处绑定域名" class="headerlink" title="5.1 虚拟主机控制面板处绑定域名"></a>5.1 虚拟主机控制面板处绑定域名</h4><p>在虚拟主机控制面板处绑定你自己的域名，如果没有SSL证书可以不用勾选开启HTTPS支持，后续再说。yourdomain.xxx 和 <a target="_blank" rel="noopener" href="http://www.yourdomain.xxx/">www.yourdomain.xxx</a> 都要绑定，否则影响后续SSL证书申请，我的已经部署了SSL，所以是https开头的。</p>
 <p><img data-src="/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/bt_setting_01.png" alt="虚拟主机控制面板处绑定域名"></p>
 <h4 id="5-2-BT-宝塔管理面板绑定域名"><a href="#5-2-BT-宝塔管理面板绑定域名" class="headerlink" title="5.2 BT-宝塔管理面板绑定域名"></a>5.2 BT-宝塔管理面板绑定域名</h4><p>进入宝塔面板添加站点，在域名处添加自己的域名，yourdomain.xxx 和 <a target="_blank" rel="noopener" href="http://www.yourdomain.xxx/">www.yourdomain.xxx</a></p>
 <p>根目录直接默认就可，PHP版本处改为纯静态，提交即可，这样就会在根目录 /www/wwwroot/ 创建文件夹 yourdomain.xxx </p>
@@ -420,7 +426,7 @@ hexo server # 启动服务，等同于 hexo s<span aria-hidden="true" class="lin
 <p><img data-src="/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/dns_02.png" alt="默认界面"></p>
 <p>至此，站点的解析工作完成</p>
 <h3 id="6-设置HTTPS访问"><a href="#6-设置HTTPS访问" class="headerlink" title="6. 设置HTTPS访问"></a>6. 设置HTTPS访问</h3><p>通俗的来讲，由于HTTPS把SSL「Secure Sockets Layer 安全套接字协议」作为自己的子层，因此有了SSL，才能够通过 https 访问自己的站点，否则只能够通过 http 来访问，如果没有这方面的需求，可以不用设置，但是宝塔都免费送了，不要白不要是吧「手动滑稽」</p>
-<h4 id="6-1-申请SSL"><a href="#6-1-申请SSL" class="headerlink" title="6.1 申请SSL"></a>6.1 申请SSL</h4><p>保证 yourdomain.xxx 和 <a target="_blank" rel="noopener" href="http://www.yourdomain.xxx都是能够访问到的,然后直接点击申请即可./">www.yourdomain.xxx都是能够访问到的，然后直接点击申请即可。</a></p>
+<h4 id="6-1-申请SSL"><a href="#6-1-申请SSL" class="headerlink" title="6.1 申请SSL"></a>6.1 申请SSL</h4><p>保证 yourdomain.xxx 和 <a target="_blank" rel="noopener" href="http://www.yourdomain.xxx/">www.yourdomain.xxx</a> 都是能够访问到的，然后直接点击申请即可。</p>
 <p><img data-src="/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/ssl_01.png" alt="SSL申请"></p>
 <h4 id="6-2-申请Let’s-Encrypt"><a href="#6-2-申请Let’s-Encrypt" class="headerlink" title="6.2 申请Let’s Encrypt"></a>6.2 申请Let’s Encrypt</h4><p>这个Let’s Encrypt就是一个公共且免费SSL的项目，在申请Let’s Encrypt之前，请确保自己服务器上 /www/wwwroot/yourdomain.xxx/ 目录下的 .well-known文件夹权限是 www 用户的，否则会因为权限问题而申请失败</p>
 <h4 id="6-3-部署SSL"><a href="#6-3-部署SSL" class="headerlink" title="6.3 部署SSL"></a>6.3 部署SSL</h4><p>先在BT-宝塔面板管理上对网站进行部署设置，直接来到设置中，在SSL处选择“宝塔SSL”，点击“部署”即可，同时开启“强制HTTPS”按钮</p>
@@ -440,51 +446,61 @@ hexo server # 启动服务，等同于 hexo s<span aria-hidden="true" class="lin
 <p><img data-src="/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/xshell_02.png" alt="SSH连接"></p>
 <p>连接成功后会进入控制台</p>
 <h4 id="8-2-服务器端生成git仓库"><a href="#8-2-服务器端生成git仓库" class="headerlink" title="8.2 服务器端生成git仓库"></a>8.2 服务器端生成git仓库</h4><p>创建git用户，创建该用户是为了方面管理git仓库，使得各用户各司其职</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">useradd git  # 添加git用户
+<pre><code class="shell">useradd git  # 添加git用户
 passwd git   # 输入git用户的密码
-su git       # 切换到git用户<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+su git       # 切换到git用户
+</code></pre>
 <p>创建git仓库文件夹</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">cd &#x2F;home&#x2F;git
-mkdir repos  # 使用该文件夹作为仓库目录<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre><code class="shell">cd /home/git
+mkdir repos  # 使用该文件夹作为仓库目录
+</code></pre>
 <p>配置git仓库</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">cd repos
+<pre><code class="shell">cd repos
 git init --bare blog.git  # 初始化裸库，不作为工作环境，仅仅用于仓库管理
-cd blog.git&#x2F;hooks
-vim post-receive # 服务端hooks<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+cd blog.git/hooks
+vim post-receive # 服务端hooks
+</code></pre>
 <p>在post-receive文件中添加下面内容，注意“yourdomain.xxx”替换成你自己的文件夹名称</p>
-<pre class="line-numbers language-none"><code class="language-none">#!&#x2F;bin&#x2F;sh
-git --work-tree&#x3D;&#x2F;www&#x2F;wwwroot&#x2F;yourdomain.xxx --git-dir&#x3D;&#x2F;home&#x2F;git&#x2F;repos&#x2F;blog.git checkout -f<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre><code>#!/bin/sh
+git --work-tree=/www/wwwroot/yourdomain.xxx --git-dir=/home/git/repos/blog.git checkout -f
+</code></pre>
 <p>修改权限，注意“yourdomain.xxx”替换成你自己的文件夹名称，权限一定要修改，否则会出大问题</p>
-<pre class="line-numbers language-none"><code class="language-none">chmod +x post-receive
+<pre><code>chmod +x post-receive
 exit # 退出当前用户，切换到root用户
-chown -R git:git &#x2F;home&#x2F;git&#x2F;repos&#x2F;blog.git
-chown git:git &#x2F;www&#x2F;wwwroot&#x2F;yourdomain.xxx # 使得git用户能够推送博客内容<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+chown -R git:git /home/git/repos/blog.git
+chown git:git /www/wwwroot/yourdomain.xxx # 使得git用户能够推送博客内容
+</code></pre>
 <h4 id="8-3-密钥设置"><a href="#8-3-密钥设置" class="headerlink" title="8.3 密钥设置"></a>8.3 密钥设置</h4><p>为了提高安全性，这里加了密钥，实际上也必须得加。密钥就相当于在管道两边加了把锁，只有拿着钥匙的人才能够进入管道，而钥匙是放在本地的，锁是放在服务器端的，只不过在ssh里，钥匙叫做私钥，锁叫做公钥</p>
 <p>在本地生成SSH密钥，注意是在本地生成，不是服务器，在键入命令之后，连续按三次回车即可</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">ssh-keygen # 生成公私密钥<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre><code class="shell">ssh-keygen # 生成公私密钥
+</code></pre>
 <p>生成的公私密钥保存在目录</p>
 <p>C:\Users\你自己的用户名\.ssh</p>
 <p><img data-src="/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/ssh_01.png" alt="SSH密钥位置"></p>
 <p>其中的“id_rsa”是私钥，“id_rsa.pub”是公钥，直接复制公钥中的所有内容，将生成的公钥保存到服务器端</p>
-<pre class="line-numbers language-none"><code class="language-none">cd &#x2F;home&#x2F;git&#x2F;.ssh
-vim authorized_keys<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre><code>cd /home/git/.ssh
+vim authorized_keys
+</code></pre>
 <p>将内容粘贴到”authorized_keys“文件中</p>
 <h4 id="8-4-连接测试"><a href="#8-4-连接测试" class="headerlink" title="8.4 连接测试"></a>8.4 连接测试</h4><p>在本地测试连接，注意改成你自己虚拟主机的端口</p>
-<pre class="line-numbers language-none"><code class="language-none">git clone ssh:&#x2F;&#x2F;git@cn-hk1.rvh2.rainyun.com:端口&#x2F;home&#x2F;git&#x2F;repos&#x2F;blog.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre><code>git clone ssh://git@cn-hk1.rvh2.rainyun.com:端口/home/git/repos/blog.git
+</code></pre>
 <p>如果拉取下之前创建的裸库-blog，表示连接OK</p>
 <h3 id="9-推送内容"><a href="#9-推送内容" class="headerlink" title="9. 推送内容"></a>9. 推送内容</h3><h4 id="9-1-配置本地hexo文件"><a href="#9-1-配置本地hexo文件" class="headerlink" title="9.1 配置本地hexo文件"></a>9.1 配置本地hexo文件</h4><p>在博客的根目录中找到“_config.yml”</p>
 <p><img data-src="/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/hexo_setting_01.png" alt="hexo配置文件"></p>
 <p>在配置文件的最后，找到deploy，注意，端口改成你自己的虚拟主机端口</p>
-<pre class="line-numbers language-none"><code class="language-none">deploy:
+<pre><code>deploy:
   type: git
   repo: 
-    rainyun: ssh:&#x2F;&#x2F;git@cn-hk1.rvh2.rainyun.com:端口&#x2F;home&#x2F;git&#x2F;repos&#x2F;blog.git
-  branch: master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    rainyun: ssh://git@cn-hk1.rvh2.rainyun.com:端口/home/git/repos/blog.git
+  branch: master
+</code></pre>
 <h4 id="9-2-修改服务器文件"><a href="#9-2-修改服务器文件" class="headerlink" title="9.2 修改服务器文件"></a>9.2 修改服务器文件</h4><p>进入服务器端网站根目录 /www/wwwroot/yourdomain.xxx 找到index.html ，直接删除或者重命名为”index.html.old”，这是为了防止推送博客的时候将其覆盖掉。</p>
 <h4 id="9-3-博客推送"><a href="#9-3-博客推送" class="headerlink" title="9.3 博客推送"></a>9.3 博客推送</h4><p>进入博客根目录</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">hexo clean  # 删除缓存（删除之前生成的静态文件-存放在public文件夹）
+<pre><code class="shell">hexo clean  # 删除缓存（删除之前生成的静态文件-存放在public文件夹）
 hexo g # 生成静态文件
-hexo d # 推送<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+hexo d # 推送
+</code></pre>
 <p>现在访问你的域名，应该就能够看到博客内容了</p>
 <p><img data-src="/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/finish.png" alt="OK"></p>
 <h2 id="博客完善"><a href="#博客完善" class="headerlink" title="博客完善"></a>博客完善</h2><p>hexo美化</p>
@@ -532,7 +548,7 @@ hexo d # 推送<span aria-hidden="true" class="line-numbers-rows"><span></span><
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="http://example.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="Hexo部署到个人服务器">http://example.com/2021/01/28/建站/hexo部署到个人服务器/</a>
+      <a href="https://runfunwolf.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="Hexo部署到个人服务器">https://runfunwolf.com/2021/01/28/建站/hexo部署到个人服务器/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -651,7 +667,7 @@ hexo d # 推送<span aria-hidden="true" class="line-numbers-rows"><span></span><
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">4 分钟</span>
+    <span title="站点阅读时长">5 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">
@@ -699,6 +715,16 @@ hexo d # 推送<span aria-hidden="true" class="line-numbers-rows"><span></span><
 
 
 
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.0.0/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink.listen({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://runfunwolf.com/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/',]
+      });
+      });
+  </script>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.css">
 
