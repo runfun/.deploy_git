@@ -24,31 +24,14 @@
 </li>
 </ul>
 <p>博主的文件目录如下<br><img src alt="文件目录"><br><a href="https://github.com/next-theme/hexo-theme-next">next主题</a><br>主题安装</p>
-<pre><code>cd .\Blog\
-git clone https://github.com/next-theme/hexo-theme-next themes/next
-</code></pre>
+<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">cd .\Blog\</span><br><span class="line">git clone https:<span class="regexp">//gi</span>thub.com<span class="regexp">/next-theme/</span>hexo-theme-<span class="keyword">next</span> themes/<span class="keyword">next</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
 <p>字体设置</p>
 <p>代码高亮设置</p>
 <p>tags<br>categories<br>about<br>404</p>
-<pre><code class="html">&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-&lt;head&gt;
-  &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8;&quot;/&gt;
-  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot; /&gt;
-  &lt;meta name=&quot;robots&quot; content=&quot;all&quot; /&gt;
-  &lt;meta name=&quot;robots&quot; content=&quot;index,follow&quot;/&gt;
-  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://qzone.qq.com/gy/404/style/404style.css&quot;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;script type=&quot;text/plain&quot; src=&quot;http://www.qq.com/404/search_children.js&quot;
-          charset=&quot;utf-8&quot; homePageUrl=&quot;/&quot;
-          homePageName=&quot;回到我的主页&quot;&gt;
-  &lt;/script&gt;
-  &lt;script src=&quot;https://qzone.qq.com/gy/404/data.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-  &lt;script src=&quot;https://qzone.qq.com/gy/404/page.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">HTML</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;content-type&quot;</span> <span class="attr">content</span>=<span class="string">&quot;text/html;charset=utf-8;&quot;</span>/&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;IE=edge,chrome=1&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;robots&quot;</span> <span class="attr">content</span>=<span class="string">&quot;all&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;robots&quot;</span> <span class="attr">content</span>=<span class="string">&quot;index,follow&quot;</span>/&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://qzone.qq.com/gy/404/style/404style.css&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/plain&quot;</span> <span class="attr">src</span>=<span class="string">&quot;http://www.qq.com/404/search_children.js&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> <span class="attr">homePageUrl</span>=<span class="string">&quot;/&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">homePageName</span>=<span class="string">&quot;回到我的主页&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://qzone.qq.com/gy/404/data.js&quot;</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://qzone.qq.com/gy/404/page.js&quot;</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>界面</p>
 ]]></content>
       <categories>
@@ -84,16 +67,9 @@ git clone https://github.com/next-theme/hexo-theme-next themes/next
 <p>在系统变量中新建NODE_PATH变量，值设置为你自己的node_global文件夹目录，这里是<code>D:\Software\Nodejs\node_global</code></p>
 <p><img data-src="/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/nodejs_config_02.png" alt="nodejs安装初始界面"></p>
 <p>设置完成之后，我们还需要修改npm配置文件，直接命令行键入</p>
-<pre><code>npm config set prefix &quot;D:\Software\Nodejs\node_global&quot;
-npm config set cache &quot;D:\Software\Nodejs\node_cache&quot;
-</code></pre>
+<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">npm<span class="built_in"> config </span><span class="builtin-name">set</span><span class="built_in"> prefix </span><span class="string">&quot;D:\Software\Nodejs\node_global&quot;</span></span><br><span class="line">npm<span class="built_in"> config </span><span class="builtin-name">set</span> cache <span class="string">&quot;D:\Software\Nodejs\node_cache&quot;</span></span><br></pre></td></tr></table></figure>
 <h3 id="2-Hexo框架"><a href="#2-Hexo框架" class="headerlink" title="2. Hexo框架"></a>2. Hexo框架</h3><h4 id="2-1-安装Hexo"><a href="#2-1-安装Hexo" class="headerlink" title="2.1 安装Hexo"></a>2.1 安装Hexo</h4><p><a href="https://hexo.io/zh-cn/">Hexo博客框架</a>的安装十分简单，直接按照官网步骤来即可</p>
-<pre><code>npm install hexo-cli -g # 全局安装hexo
-hexo init blog # 初始化博客文件夹，命名为blog；默认是在当前文件夹
-cd blog
-npm install # 安装依赖
-hexo server # 启动服务，等同于 hexo s
-</code></pre>
+<figure class="highlight mipsasm"><table><tr><td class="code"><pre><span class="line">npm <span class="keyword">install </span>hexo-cli -g <span class="comment"># 全局安装hexo</span></span><br><span class="line">hexo init <span class="keyword">blog </span><span class="comment"># 初始化博客文件夹，命名为blog；默认是在当前文件夹</span></span><br><span class="line">cd <span class="keyword">blog</span></span><br><span class="line"><span class="keyword">npm </span><span class="keyword">install </span><span class="comment"># 安装依赖</span></span><br><span class="line">hexo server <span class="comment"># 启动服务，等同于 hexo s</span></span><br></pre></td></tr></table></figure>
 <p>这样在浏览器进入<a href="http://localhost:4000/">http://localhost:4000/</a>就能够看到博客界面了，至此，博客框架就安装完了</p>
 <p><img data-src="/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/hexo_install.png" alt="Hexo框架安装完成"></p>
 <h4 id="2-2-博客使用和主题选择"><a href="#2-2-博客使用和主题选择" class="headerlink" title="2.2 博客使用和主题选择"></a>2.2 博客使用和主题选择</h4><p>至于博客使用和主题选择可以参考我的另外几篇博文，同时也可以在<a href="https://hexo.io/zh-cn/docs/">官方文档</a>和<a href="google.com">网络</a>上找到大量的分享。可以先专注于服务器部署，后续再进行博客的熟悉和主题美化。</p>
@@ -141,61 +117,34 @@ hexo server # 启动服务，等同于 hexo s
 <p><img data-src="/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/xshell_02.png" alt="SSH连接"></p>
 <p>连接成功后会进入控制台</p>
 <h4 id="8-2-服务器端生成git仓库"><a href="#8-2-服务器端生成git仓库" class="headerlink" title="8.2 服务器端生成git仓库"></a>8.2 服务器端生成git仓库</h4><p>创建git用户，创建该用户是为了方面管理git仓库，使得各用户各司其职</p>
-<pre><code class="shell">useradd git  # 添加git用户
-passwd git   # 输入git用户的密码
-su git       # 切换到git用户
-</code></pre>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">useradd git  # 添加git用户</span><br><span class="line">passwd git   # 输入git用户的密码</span><br><span class="line">su git       # 切换到git用户</span><br></pre></td></tr></table></figure>
 <p>创建git仓库文件夹</p>
-<pre><code class="shell">cd /home/git
-mkdir repos  # 使用该文件夹作为仓库目录
-</code></pre>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /home/git</span><br><span class="line">mkdir repos  # 使用该文件夹作为仓库目录</span><br></pre></td></tr></table></figure>
 <p>配置git仓库</p>
-<pre><code class="shell">cd repos
-git init --bare blog.git  # 初始化裸库，不作为工作环境，仅仅用于仓库管理
-cd blog.git/hooks
-vim post-receive # 服务端hooks
-</code></pre>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd repos</span><br><span class="line">git init --bare blog.git  # 初始化裸库，不作为工作环境，仅仅用于仓库管理</span><br><span class="line">cd blog.git/hooks</span><br><span class="line">vim post-receive # 服务端hooks</span><br></pre></td></tr></table></figure>
 <p>在post-receive文件中添加下面内容，注意“yourdomain.xxx”替换成你自己的文件夹名称</p>
-<pre><code>#!/bin/sh
-git --work-tree=/www/wwwroot/yourdomain.xxx --git-dir=/home/git/repos/blog.git checkout -f
-</code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line">git --work-tree=/www/wwwroot/yourdomain.xxx --git-dir=/home/git/repos/blog.git checkout -f</span><br></pre></td></tr></table></figure>
 <p>修改权限，注意“yourdomain.xxx”替换成你自己的文件夹名称，权限一定要修改，否则会出大问题</p>
-<pre><code>chmod +x post-receive
-exit # 退出当前用户，切换到root用户
-chown -R git:git /home/git/repos/blog.git
-chown git:git /www/wwwroot/yourdomain.xxx # 使得git用户能够推送博客内容
-</code></pre>
+<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">chmod +x post-receive</span><br><span class="line"><span class="keyword">exit</span> <span class="comment"># 退出当前用户，切换到root用户</span></span><br><span class="line">chown -R git:git <span class="regexp">/home/gi</span>t<span class="regexp">/repos/</span>blog.git</span><br><span class="line">chown git:git <span class="regexp">/www/</span>wwwroot/yourdomain.xxx <span class="comment"># 使得git用户能够推送博客内容</span></span><br></pre></td></tr></table></figure>
 <h4 id="8-3-密钥设置"><a href="#8-3-密钥设置" class="headerlink" title="8.3 密钥设置"></a>8.3 密钥设置</h4><p>为了提高安全性，这里加了密钥，实际上也必须得加。密钥就相当于在管道两边加了把锁，只有拿着钥匙的人才能够进入管道，而钥匙是放在本地的，锁是放在服务器端的，只不过在ssh里，钥匙叫做私钥，锁叫做公钥</p>
 <p>在本地生成SSH密钥，注意是在本地生成，不是服务器，在键入命令之后，连续按三次回车即可</p>
-<pre><code class="shell">ssh-keygen # 生成公私密钥
-</code></pre>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-keygen # 生成公私密钥</span><br></pre></td></tr></table></figure>
 <p>生成的公私密钥保存在目录</p>
 <p>C:\Users\你自己的用户名\.ssh</p>
 <p><img data-src="/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/ssh_01.png" alt="SSH密钥位置"></p>
 <p>其中的“id_rsa”是私钥，“id_rsa.pub”是公钥，直接复制公钥中的所有内容，将生成的公钥保存到服务器端</p>
-<pre><code>cd /home/git/.ssh
-vim authorized_keys
-</code></pre>
+<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">cd <span class="regexp">/home/gi</span>t/.ssh</span><br><span class="line">vim authorized_keys</span><br></pre></td></tr></table></figure>
 <p>将内容粘贴到”authorized_keys“文件中</p>
 <h4 id="8-4-连接测试"><a href="#8-4-连接测试" class="headerlink" title="8.4 连接测试"></a>8.4 连接测试</h4><p>在本地测试连接，注意改成你自己虚拟主机的端口</p>
-<pre><code>git clone ssh://git@cn-hk1.rvh2.rainyun.com:端口/home/git/repos/blog.git
-</code></pre>
+<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">git clone ssh:<span class="regexp">//gi</span>t@cn-hk1.rvh2.rainyun.com:端口<span class="regexp">/home/gi</span>t<span class="regexp">/repos/</span>blog.git</span><br></pre></td></tr></table></figure>
 <p>如果拉取下之前创建的裸库-blog，表示连接OK</p>
 <h3 id="9-推送内容"><a href="#9-推送内容" class="headerlink" title="9. 推送内容"></a>9. 推送内容</h3><h4 id="9-1-配置本地hexo文件"><a href="#9-1-配置本地hexo文件" class="headerlink" title="9.1 配置本地hexo文件"></a>9.1 配置本地hexo文件</h4><p>在博客的根目录中找到“_config.yml”</p>
 <p><img data-src="/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/hexo_setting_01.png" alt="hexo配置文件"></p>
 <p>在配置文件的最后，找到deploy，注意，端口改成你自己的虚拟主机端口</p>
-<pre><code>deploy:
-  type: git
-  repo: 
-    rainyun: ssh://git@cn-hk1.rvh2.rainyun.com:端口/home/git/repos/blog.git
-  branch: master
-</code></pre>
+<figure class="highlight less"><table><tr><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line">  <span class="attribute">type</span>: git</span><br><span class="line">  <span class="attribute">repo</span>: </span><br><span class="line">    <span class="attribute">rainyun</span>: <span class="attribute">ssh</span>:<span class="comment">//git@cn-hk1.rvh2.rainyun.com:端口/home/git/repos/blog.git</span></span><br><span class="line">  <span class="attribute">branch</span>: master</span><br></pre></td></tr></table></figure>
 <h4 id="9-2-修改服务器文件"><a href="#9-2-修改服务器文件" class="headerlink" title="9.2 修改服务器文件"></a>9.2 修改服务器文件</h4><p>进入服务器端网站根目录 /www/wwwroot/yourdomain.xxx 找到index.html ，直接删除或者重命名为”index.html.old”，这是为了防止推送博客的时候将其覆盖掉。</p>
 <h4 id="9-3-博客推送"><a href="#9-3-博客推送" class="headerlink" title="9.3 博客推送"></a>9.3 博客推送</h4><p>进入博客根目录</p>
-<pre><code class="shell">hexo clean  # 删除缓存（删除之前生成的静态文件-存放在public文件夹）
-hexo g # 生成静态文件
-hexo d # 推送
-</code></pre>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo clean  # 删除缓存（删除之前生成的静态文件-存放在public文件夹）</span><br><span class="line">hexo g # 生成静态文件</span><br><span class="line">hexo d # 推送</span><br></pre></td></tr></table></figure>
 <p>现在访问你的域名，应该就能够看到博客内容了</p>
 <p><img data-src="/2021/01/28/%E5%BB%BA%E7%AB%99/hexo%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%AA%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/finish.png" alt="OK"></p>
 <h2 id="博客完善"><a href="#博客完善" class="headerlink" title="博客完善"></a>博客完善</h2><p>hexo美化</p>
