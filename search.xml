@@ -1,6 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>NexT主题下文章编辑技巧</title>
+    <url>/posts/3b9ecf4a/</url>
+    <content><![CDATA[<h2 id="引用居中"><a href="#引用居中" class="headerlink" title="引用居中"></a>引用居中</h2><p>效果展示</p>
+<blockquote class="blockquote-center">
+<p>看我居中了不 - 标签方式 </p>
+
+</blockquote>
+<p>可以使用<code>html</code>方式和<code>标签<code>的方式</code></code></p>
+<p>HTML方式</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">blockquote</span> <span class="attr">class</span>=<span class="string">&quot;blockquote-center&quot;</span>&gt;</span>看我居中了不<span class="tag">&lt;/<span class="name">blockquote</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>标签方式</p>
+<figure class="highlight django"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">centerquote</span> %&#125;</span><span class="xml"> 看我居中了不-标签方式 </span><span class="template-tag">&#123;% <span class="name">endcenterquote</span> %&#125;</span></span><br></pre></td></tr></table></figure>
+<p>也可以使用标签别名标签</p>
+<figure class="highlight django"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">cq</span> %&#125;</span><span class="xml"> 看我居中了不-标签方式 </span><span class="template-tag">&#123;% <span class="name">endcq</span> %&#125;</span></span><br></pre></td></tr></table></figure>
+<h2 id="特殊标注"><a href="#特殊标注" class="headerlink" title="特殊标注"></a>特殊标注</h2><p>这是使用的 BootStrap 的样式，一共有六种样式</p>
+<figure class="highlight django"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">note</span> default %&#125;</span><span class="xml">default</span><span class="template-tag">&#123;% <span class="name">endnote</span> %&#125;</span></span><br><span class="line"><span class="template-tag">&#123;% <span class="name">note</span> primary %&#125;</span><span class="xml">primary</span><span class="template-tag">&#123;% <span class="name">endnote</span> %&#125;</span></span><br><span class="line"><span class="template-tag">&#123;% <span class="name">note</span> success %&#125;</span><span class="xml">success</span><span class="template-tag">&#123;% <span class="name">endnote</span> %&#125;</span></span><br><span class="line"><span class="template-tag">&#123;% <span class="name">note</span> info %&#125;</span><span class="xml">info</span><span class="template-tag">&#123;% <span class="name">endnote</span> %&#125;</span></span><br><span class="line"><span class="template-tag">&#123;% <span class="name">note</span> warning %&#125;</span><span class="xml">warning</span><span class="template-tag">&#123;% <span class="name">endnote</span> %&#125;</span></span><br><span class="line"><span class="template-tag">&#123;% <span class="name">note</span> danger %&#125;</span><span class="xml">danger</span><span class="template-tag">&#123;% <span class="name">endnote</span> %&#125;</span></span><br></pre></td></tr></table></figure>
+<div class="note default"><p>default</p>
+</div>
+<div class="note primary"><p>primary</p>
+</div>
+<div class="note success"><p>success</p>
+</div>
+<div class="note info"><p>info</p>
+</div>
+<div class="note warning"><p>warning</p>
+</div>
+<div class="note danger"><p>danger</p>
+</div>
+]]></content>
+      <categories>
+        <category>写作</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo部署到个人服务器</title>
     <url>/posts/6d0bc8dc/</url>
     <content><![CDATA[<!-- # Hexo部署到个人服务器 -->
@@ -110,8 +148,8 @@
         <category>建站</category>
       </categories>
       <tags>
-        <tag>建站</tag>
         <tag>Hexo</tag>
+        <tag>建站</tag>
       </tags>
   </entry>
   <entry>
@@ -231,9 +269,9 @@
         <category>建站</category>
       </categories>
       <tags>
-        <tag>建站</tag>
         <tag>Hexo</tag>
         <tag>NexT</tag>
+        <tag>建站</tag>
       </tags>
   </entry>
 </search>
